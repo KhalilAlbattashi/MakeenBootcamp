@@ -6,4 +6,7 @@ if both conditions are true return the numbers are the same(equal) otherwise set
 
 ## Problem of the day 2:
 in this problem the user enter the number of the vectors and then enters the coordinates of each vector (x1, y1) (x2, y2)
-after that the program calculate each vector's length and slope and also find the min and max y coordinate out of all the y coordinates
+after that the program calculate each vector's length and slope and also find the min and max y coordinate out of all the y coordinates.
+
+## Problem of The Day 3:
+in this problem we check for the first non duplicate number in the array.
