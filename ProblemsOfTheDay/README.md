@@ -13,3 +13,6 @@ in this problem we check for the first non duplicate number in the array.
 
 ## Problem of The Day 4:
 in this solution we find where the left sum of the array equals the right sum of the array if true print the two halvs of the array else print false
+
+## Problem of The Day 5:
+in this solution the we rotate the element of the array n times
