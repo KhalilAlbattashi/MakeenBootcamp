@@ -16,3 +16,6 @@ in this solution we find where the left sum of the array equals the right sum of
 
 ## Problem of The Day 5:
 in this solution the we rotate the element of the array n times
+
+## Problem of The Day 6:
+in this solution we calculate the sum of the two diagonals of the matrix (main and right diagonal) and also calculate the abs value of subtracting the two sums
