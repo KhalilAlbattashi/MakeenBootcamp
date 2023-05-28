@@ -1,0 +1,190 @@
+body {
+    background-color: #000;
+    color: #7a7a7a;
+    margin: 0;
+    padding: 0;
+    font-family: 'Russo One', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 1400px;
+    overflow-y: auto;
+}
+
+.Container {
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #7a7a7a;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    color: #7a7a7a;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar-right a i {
+    margin-right: 5px;
+}
+
+h1 {
+    color: #7a7a7a;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 10px;
+    padding: 20px;
+    font-size: 36px;
+}
+
+p {
+    color: #7a7a7a;
+    margin: 10px;
+    padding: 20px;
+}
+.portfolio-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+hr{
+    color: #7a7a7a;
+}
+
+/*Experince Section*/
+section.experience {
+    background-color: #000;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+section.experience h2 {
+    font-size: 24px;
+    color: #7a7a7a;
+    margin-bottom: 10px;
+}
+
+section.experience .experience-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section.experience .experience-card {
+    background-color: #000;
+    border: 1px solid #7a7a7a;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    width: 300px;
+}
+
+section.experience .experience-card h3 {
+    font-size: 20px;
+    color: #7a7a7a;
+    
+}
+
+section.experience .experience-card p {
+    font-size: 16px;
+    color: #7a7a7a;
+    margin-bottom: 0;
+}
+
+
+/* Projects Section*/
+
+section.projects {
+    background-color: #000;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+section.projects h2 {
+    font-size: 24px;
+    color: #7a7a7a;
+    margin-bottom: 20px;
+}
+
+section.projects .project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+section.projects .project {
+    background-color: #000;
+    border: 1px solid #7a7a7a;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    width: 300px; /* Set the desired width of the project cards */
+}
+
+section.projects .project h3 {
+    font-size: 20px;
+    color: #7a7a7a;
+    margin-bottom: 10px;
+}
+
+section.projects .project p {
+    font-size: 16px;
+    color: #7a7a7a;
+    margin-bottom: 10px;
+}
+
+section.projects .project .project-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section.projects .project .project-links a {
+    margin: 5px;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #7a7a7a;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #7a7a7a;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer a {
+    color: #7a7a7a;
+    text-decoration: none;
+    margin-left: 20px;
+}
