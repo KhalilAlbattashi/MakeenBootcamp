@@ -1,0 +1,31 @@
+.parent{
+    position: relative;
+    height: 100vh;
+    background-color: tomato;
+}
+
+.one{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background-color:bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.75rem;
+}
+
+.two{
+    background-color: aqua;
+    height: 50%;
+    width: 50%;
+}
+
+.three{
+    background-color: coral;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+
+}
