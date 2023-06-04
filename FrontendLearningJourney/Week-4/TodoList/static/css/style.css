@@ -1,60 +1,80 @@
-*{
+/* style.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+/* Nav bar Section */
+.nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
     margin: 0;
 }
-body{
-    background-color: #F8F1F1;
+
+.nav-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
-.nav{
-    background-color:#025464;
-    color: white;
-    width: 100%;
-    height: 8vh;
+
+.nav-item {
+    margin-left: 20px;
+    cursor: pointer;
 }
-.title{
-    margin-right: 75vw;
-    font-size: 2rem !important;
+
+/* Home Section */
+.home {
+    margin: 40px;
 }
-.items{
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin: 0;
+}
+
+/* Days Todo section */
+.days {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.day li {
     list-style: none;
 }
 
-.item{
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
+.day h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
 }
 
-h2{
-    text-align: center;
-    margin-bottom: 2rem;
-}
-.Home{
-    margin-left: 25vw;
-}
-
-.card{
-    float: left;
-    background-color: #E8AA42;
-    margin-left: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 2px solid;
-    border-radius: 5px;
-    width: 20vw;
-    height: 30vh;
-}
-
-.days{
-    width: 100vw;
-    margin-top: 5%;
-    float: left;
-}
-.day{
-    padding-left: 0;
-    background-color: #E8AA42;
-    border: 2px solid;
-    margin-left: 3%;
-    display: inline-block;
-    height: 30vh;
-    width: 10vw;
+.day hr {
+    margin: 10px 0;
+    border-top: 1px solid #ddd;
 }
