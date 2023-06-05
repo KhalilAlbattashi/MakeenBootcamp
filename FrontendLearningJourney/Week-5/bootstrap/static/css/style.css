@@ -1,0 +1,13 @@
+
+.box{
+    height: 5vh;
+    background-color: tomato;
+    margin: 10px;
+}
+.center{
+    text-align: center;
+}
+.cont{
+    display: flex;
+}
+
