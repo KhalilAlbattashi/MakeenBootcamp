@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Inventory Management System</title>
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+  <h1>Inventory Management System</h1>
+
+  <div id="items">
+    <h2>Items</h2>
+    <div class="card">
+      <img height="40px" width="40px" src="static/imgs/volodymyr-hryshchenko-inI8GnmS190-unsplash.jpg" alt="Item 1">
+      <div class="card-content">
+        <span class="item-name">Rubics cube</span>
+        <span class="item-price">$10</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img height="40px" width="40px" src="static/imgs/ryan-plomp--aCtb_RTwuM-unsplash.jpg" alt="Item 2">
+      <div class="card-content">
+        <span class="item-name">Jordans</span>
+        <span class="item-price">$15</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img height="40px" width="40px" src="static/imgs/alexunder-hess-bWZAPKm0zZE-unsplash.jpg" alt="Item 3">
+      <div class="card-content">
+        <span class="item-name">Beats Headphone</span>
+        <span class="item-price">$20</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </ul>
+    <button id="checkout">Checkout</button>
+    <p id="total">Total: $0</p>
+  </div>
+
+  <script src="static/js/script.js"></script>
+</body>
+
+</html>
