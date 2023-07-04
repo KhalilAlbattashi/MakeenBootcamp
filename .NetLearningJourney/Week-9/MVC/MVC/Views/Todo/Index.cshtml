@@ -1,6 +1,25 @@
-﻿<div class="container">
+﻿@model List<Todo>
+
+<div class="container">
     <div class="row">
         <h3 class="col-4">Welcome to your Todos</h3>
         <a class="col-4 btn btn-primary" asp-controller="Todo" asp-action="Create">create a new Todo</a>
     </div>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Todo Id</th>
+                <th>Todo description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var todo in Model)
+            {
+                <tr>
+                    <td>@todo.id</td>
+                    <td>@todo.description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

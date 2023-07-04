@@ -1,12 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using MVC.Data;
 
 namespace MVC.Controllers
 {
     public class TodoController : Controller
     {
+        private readonly ApplicationDbContext _db;
+
+        public TodoController(ApplicationDbContext db)
+        {
+            _db = db;
+        }
         public IActionResult Index()
         {
-            return View();
+            var todos = _db.todos.ToList();
+            return View(todos);
         }
 
         public IActionResult Create()

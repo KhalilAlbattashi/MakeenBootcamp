@@ -6,6 +6,6 @@ namespace MVC.Data
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options){ }
-        DbSet<Todo> todos { get; set; }
+        public DbSet<Todo> todos { get; set; }
     }
 }
