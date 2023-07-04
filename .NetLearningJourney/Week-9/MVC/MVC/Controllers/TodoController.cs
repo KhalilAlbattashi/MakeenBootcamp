@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using MVC.Data;
+using MVC.Models;
 
 namespace MVC.Controllers
 {
@@ -22,5 +23,13 @@ namespace MVC.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Create(Todo todo)
+        {
+            _db.todos.Add(todo);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
     }
 }
