@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.IdentityModel.Tokens;
 using MVC.Data;
 using MVC.Models;
@@ -26,10 +27,42 @@ namespace MVC.Controllers
         [HttpPost]
         public IActionResult Create(Todo todo)
         {
-            _db.todos.Add(todo);
+            if (ModelState.IsValid)
+            {
+                _db.todos.Add(todo);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(todo);
+            }
+        }
+
+        public IActionResult Edit(int id)
+        {
+            var todo = _db.todos.Find(id);
+            return View(todo); 
+        }
+
+        // update todo in the list 
+        [HttpPost]
+        public IActionResult Edit(Todo todo)
+        {
+            _db.todos.Update(todo);
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        // delete Todo from the list
+        public IActionResult Delete(int id)
+        {
+            _db.todos.Remove(_db.todos.Find(id));
+            _db.SaveChanges();  
+            return RedirectToAction("Index");
+        }
+
+
 
     }
 }

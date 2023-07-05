@@ -18,6 +18,8 @@
                 <tr>
                     <td>@todo.id</td>
                     <td>@todo.description</td>
+                    <td> <a class="btn btn-info" asp-route-id="@todo.id" asp-controller="Todo" asp-action="Edit"> Edit </a></td>
+                    <td> <a class="btn btn-danger" asp-route-id="@todo.id" asp-controller="Todo" asp-action="Delete"> Delete </a></td>
                 </tr>
             }
         </tbody>
