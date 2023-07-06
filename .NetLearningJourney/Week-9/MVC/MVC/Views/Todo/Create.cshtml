@@ -1,5 +1,4 @@
 ﻿@model Todo
-
 <form method="post">
     <div class="container">
         <div class="mb-3">
@@ -7,10 +6,17 @@
                 Create a Todo
             </label>
             <input asp-for="description" class="form-control" type="text" />
+            <span asp-validation-for="description" class="text-danger"></span>
         </div>
         <div class="mb-3">
             <button type="submit" class="btn btn-primary col-2">Create</button>
         </div>
     </div>
 </form>
+
+@section scripts{
+    {
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}
 

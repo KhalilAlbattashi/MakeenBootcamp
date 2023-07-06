@@ -8,6 +8,7 @@ namespace MVC.Controllers
 {
     public class TodoController : Controller
     {
+        // connection with the database
         private readonly ApplicationDbContext _db;
 
         public TodoController(ApplicationDbContext db)
@@ -19,7 +20,6 @@ namespace MVC.Controllers
             var todos = _db.todos.ToList();
             return View(todos);
         }
-
         public IActionResult Create()
         {
             return View();
@@ -27,6 +27,14 @@ namespace MVC.Controllers
         [HttpPost]
         public IActionResult Create(Todo todo)
         {
+            if (todo.description == null)
+            {
+                ModelState.AddModelError("description", "Description cannot be null");
+            }
+            if ((todo.description != null) && (todo.description.Length == 50))// check for the length of the description
+            {
+                ModelState.AddModelError("description", "Length Exceeded");
+            }
             if (ModelState.IsValid)
             {
                 _db.todos.Add(todo);
